@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Umang |Feedback</title>
+<!-- Stylesheets -->
+<link href="../static/css/bootstrap.css" rel="stylesheet">
+<link href="../static/css/style.css" rel="stylesheet">
+<link href="../static/css/responsive.css" rel="stylesheet">
+
+<!--Color Switcher Mockup-->
+<link href="../static/css/color-switcher-design.css" rel="stylesheet">
+
+<!--Color Themes-->
+<link id="theme-color-file" href="../static/css/color-themes/default-theme.css" rel="stylesheet">
+
+<!--Favicon-->
+<link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header-->
+    <header class="main-header header-type-one">
+    
+			<!--Header Top event-->
+    	<div class="header-top">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                    
+					
+						
+<script>                                                            <!--Set the date we're counting down to-->
+
+
+         var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();    <!-- Update the count down every 1 second-->
+         var x = setInterval(function() {                                   <!--Get todays date and time-->
+		 var now = new Date().getTime();                                    <!--Find the distance between now an the count down date-->
+		 var distance = countDownDate - now;                                <!-- Time calculations for days, hours, minutes and seconds-->
+		 var days = Math.floor(distance / (1000 * 60 * 60 * 24));    
+         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+         var seconds = Math.floor((distance % (1000 * 60)) / 1000);         <!-- Output the result in an element with id="demo"-->
+					document.getElementById("demo").innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds ";
+    
+                                                                            <!-- If the count down is over, write some text -->
+    if (distance < 0) {
+        clearInterval(x);
+				document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+	<!--end of timer -->							
+				    <div class="top-left">
+						<ul class="clearfix">
+						<li><h3 style="color:white;">Upcoming Event:-</h4></li>	
+						 <li><h3  style="font-family: Comic Sans MS;" id ="demo"></h3></li>
+						 <li><a href="/events-grid/"><h5 style="color:white;">Readmore..</h5></a></li>
+						 </ul>
+				    </div>
+			
+                </div>
+            </div>
+        </div>
+    
+	
+    	<!--Header Top-->
+    	<div class="header-top">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                    <div class="top-left">
+                        <ul class="clearfix">
+                        	<li class="call-us">Have Any Question? <a href="/">Call Us</a></li>
+                            <li><span class="icon fa fa-clock-o"></span> Mon-Sat 8:00am-6:30pm</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="top-right clearfix">
+                    	<ul class="social-icon-three">
+                        <li><a href="https://www.facebook.com/Umang-For-Life-633863450299917/?modal=admin_todo_tour"><span class="icon fa fa-facebook"></span></a></li>
+                            <li><a href="https://www.instagram.com/umangforlife/"><span class="icon fa fa-instagram"></span></a></li>
+                            <li><a href="https://plus.google.com/u/0/discover"><span class="icon fa fa-google-plus"></span></a></li>
+                        </ul>
+                    	<!--Cart Box-->
+                        <a href="/login/" class="cart-box"><img src="../static/images/icons/login1.png">  Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    	<!--Header-Upper-->
+        <div class="header-upper">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                	
+                	<div class="pull-left logo-outer">
+                    	<div class="logo"><a href="/"><img src="/static/images/logo.png" alt="" title=""></a></div>
+                    </div>
+                    
+                    <div class="nav-outer clearfix">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->    	
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li><a href="/">Home</a></li>
+                                   <li><a href="/about/">About</a></li>
+                                
+								<li><a href="/events-grid/">Events</a>
+                                <li><a href="/causes-grid/">Services</a>
+                                <li class="dropdown"><a href="/">Category</a>
+                                    <ul>
+									
+									<li><a href="/children/"> Children</a></li>
+									<li><a href="/oldage/"> Old-age Home</a></li>
+									<li><a href="/widow/"> Widow Women</a></li>
+									<li><a href="/animals/"> Animals</a></li>
+									</ul>
+									
+                                </li>
+                                    
+                                    <li class="current"><a href="/feedback/">Feedback</a></li>
+                                    <li><a href="/blog/">Blog</a></li>
+                                    <li><a href="/contact/">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <br>
+                        <!-- Main Menu End-->
+                        <div class="search-box-outer">
+                            <div class="dropdown">
+                                <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+                                <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                    <li class="panel-outer">
+                                        <div class="form-container">
+                                            <form method="post" action="/search/">{% csrf_token %}
+                                                <div class="form-group">
+                                                    <input type="search" name="search" value="" placeholder="Search Here" required="">
+                                                    <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!--Donate Btn-->
+                        <div class="donate-btn">
+                        	<a class="donate theme-btn" href="/login/">Donate Now</a>
+                        </div>
+                        
+                	</div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+        
+        <!--Sticky Header-->
+        <div class="sticky-header">
+        	<div class="auto-container clearfix">
+            	<!--Logo-->
+            	<div class="logo pull-left">
+                	<a href="/" class="img-responsive"><img src="/static/images/logo-small.png" alt="" title=""></a>
+                </div>
+                
+                <!--Right Col-->
+                <div class="right-col pull-right">
+                	<!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->    	
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        
+                        <div class="navbar-collapse collapse clearfix">
+							<ul class="navigation clearfix">
+								<li><a href="/">Home</a></li>
+                                <li><a href="/about/">About</a></li>
+								<li><a href="/events-grid/">Events</a></li>
+                                <li ><a href="/causes-grid/">Services</a>
+								<li class="dropdown"><a href="/">Category</a>
+                                    
+									<ul>
+									<li><a href="/children/"> Children</a></li>
+									<li><a href="/oldage/"> Old-age Home</a></li>
+									<li><a href="/widow/"> Widow Women</a></li>
+									<li><a href="/animals/"> Animals</a></li>
+									</ul>
+									
+                                </li>
+                                   
+                                </li>
+                                <li class="current"><a href="/feedback/">Feedback</a></li>
+								<li><a href="/blog/">Blog</a></li>
+                                <li><a href="/contact/">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+                </div>
+                
+            </div>
+        </div>
+        <!--End Sticky Header-->
+    
+    </header>
+    <!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url(/static/images/background/5.jpg);">
+    	<div class="auto-container">
+        	<div class="inner-box">
+                <h1>Feedback</h1>
+                <ul class="bread-crumb">
+                	<li><a href="/">Home</a></li>
+                    <li>Feedback</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End Page Title-->
+	<br>
+    <h2 align="center" style="font-family: Comic Sans MS; color:orange;"> Feedback Form </h2>
+   <br>
+	<img src="/static/images/resource/feedback.png" align="right" height="500px" width="500px">
+                    <div class="contact-form">
+                        <form method="post" action="">{% csrf_token %}
+                            <div class="row clearfix">
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="fname" value="" placeholder="Your First Name">
+                                </div>
+								<br><br><br>
+								
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="lname" value="" placeholder="Your Last Name">
+                                </div>
+								<br><br><br>
+								
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <input type="email" name="femail" value="" placeholder="Your Email">
+                                </div>
+								<br><br><br>
+								
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" name="subject" value="" placeholder="Your Subject">
+                                </div>
+								<br><br><br>
+                                
+                                <div class="form-group col-md-6 col-sm-6 col-xs-12">
+                                    <textarea name="feedback" placeholder="Your Feedback"></textarea>
+                                </div>
+                                
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <button type="submit" onclick="myFunction1()" class="theme-btn btn-style-one">Submit</button>
+                                <script>
+
+function myFunction1() {
+
+    alert("Your feedback has been submited ! Thanks for giving feedback..!! ");
+	
+}
+
+</script>
+
+								
+								
+								</div>
+                                </div>
+                        </form>
+                    </div>
+     <!--Sponsors Section-->
+    <section class="sponsors-section style-two">
+    	<div class="auto-container">
+        	<div class="carousel-outer">
+                <!--Sponsors Slider-->
+                <ul class="sponsors-carousel owl-carousel owl-theme">
+                    <li><div class="image-box"><a href="/about/"><img src="/static/images/clients/1.png" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="/about/"><img src="/static/images/clients/2.png" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="/about/"><img src="/static/images/clients/3.png" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="/about/"><img src="/static/images/clients/4.png" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="/about/"><img src="/static/images/clients/1.png" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="/about/"><img src="/static/images/clients/2.png" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="/about/"><img src="/static/images/clients/3.png" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="/about/"><img src="/static/images/clients/4.png" alt=""></a></div></li>
+					
+                </ul>
+            </div>
+    	</div>
+    </section>
+    <!--End Sponsors Section-->
+    
+    <!--Subscribe Style One-->
+    <section class="subscribe-style-one">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <h2>Sign up for Updates</h2>
+                    <div class="text">Submit your email and stay in touch by notify with updates regularly.</div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <form method="post">{% csrf_token %}
+                        <div class="form-group">
+                            <input type="email" name="email" value="" placeholder="Enter your email" required>
+                            <button type="submit" onclick="myFunction()" class="theme-btn"><span class="icon flaticon-send-message-button"></span></button>
+							<script>
+
+function myFunction() {
+
+    alert("THANKYOU TO SUBSRCIBE ..!! ");
+	
+}
+
+</script>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!--End Subscribe Style One-->
+    
+    <!--Main Footer-->
+    <footer class="main-footer">
+    	
+        <div class="auto-container">
+            <div class="row clearfix">
+            
+                <!--big column-->
+                <div class="big-column col-md-7 col-sm-12 col-xs-12">
+                    <div class="row clearfix">
+                    
+                        <!--Footer Column-->
+                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-widget logo-widget">
+                                <div class="widget-content">
+                                    <div class="logo-box">
+                                        <a href="/"><img src="/static/images/footer-logo.png" alt="" /></a>
+                                    </div>
+                                    <br>
+                                   <ul class="social-icon-three">
+                        <li><a href="https://www.facebook.com/Umang-For-Life-633863450299917/?modal=admin_todo_tour"><span class="icon fa fa-facebook"></span></a></li>
+                            <li><a href="https://www.instagram.com/umangforlife/"><span class="icon fa fa-instagram"></span></a></li>
+                            <li><a href="https://plus.google.com/u/0/discover"><span class="icon fa fa-google-plus"></span></a></li>
+                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Footer Column / Links Widget-->
+                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-widget links-widget">
+                                <h2>Quick Links</h2>
+                                <div class="widget-content">
+                                	<div class="row clearfix">
+                                        <ul class="list col-md-7 col-sm-6 col-xs-12">
+                                            <li><a href="/about/">About us </a></li>
+                                            <li><a href="/events-grid/">Recent projects</a></li>
+                                            <li><a href="/about/">Our Mission</a></li>
+                                             <li><a href="/team/">Our Team</a></li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!--big column-->
+                <div class="big-column col-md-5 col-sm-12 col-xs-12">
+                    <div class="row clearfix">
+                     <!--Footer Column-->
+                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-widget address-widget">
+                                <h2>Our Address</h2>
+                                <div class="widget-content">
+                                    <ul class="list-style-one">
+                                        <li><span class="icon flaticon-location-pin"></span>Jims Sector-5 Rohini,New Delhi,India</li>
+                                        <li><span class="icon flaticon-technology-1"></span>9910938024</li>
+                                        <li><span class="icon flaticon-e-mail-envelope"></span>umangforlives@gmail.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+        	<div class="auto-container">
+            	<div class="row clearfix">
+                	<div class="col-md-6 col-sm-6 col-xs-12">
+                    	<div class="copyright">All Right Researved <a href="/">UMANG</a> &copy; 2018</div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                    	<ul class="footer-nav">
+                        	<li><a href="/">Home</a></li>
+                            <li><a href="/contact/">Contact Us</a></li>
+                             <li><a href="/team/">Our Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon fa fa-long-arrow-up"></span></div>
+
+
+<!-- Color Palate / Color Switcher -->
+<div class="color-palate">
+    <div class="color-trigger">
+        <i class="fa fa-gear"></i>
+    </div>
+    <div class="color-palate-head">
+        <h6>Choose Your Color</h6>
+    </div>
+    <div class="various-color clearfix">
+        <div class="colors-list">
+            <span class="palate default-color active" data-theme-file="/static/css/color-themes/default-theme.css"></span>
+            <span class="palate teal-color" data-theme-file="/static/css/color-themes/teal-theme.css"></span>
+            <span class="palate green-color" data-theme-file="/static/css/color-themes/green-theme.css"></span>
+            <span class="palate yellow-color" data-theme-file="/static/css/color-themes/yellow-theme.css"></span>
+            <span class="palate blue-color" data-theme-file="/static/css/color-themes/blue-theme.css"></span>
+            <span class="palate orange-color" data-theme-file="/static/css/color-themes/orange-theme.css"></span>
+            <span class="palate olive-color" data-theme-file="/static/css/color-themes/olive-theme.css"></span>
+            <span class="palate red-color" data-theme-file="/static/css/color-themes/red-theme.css"></span>
+        </div>
+    </div>
+
+    <div class="palate-foo">
+        <span>You can easily change and switch the colors.</span>
+    </div>
+
+</div>
+<!-- /.End Of Color Palate -->
+
+<script src="../static/js/jquery.js"></script> 
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/jquery.fancybox.pack.js"></script>
+<script src="../static/js/jquery.fancybox-media.js"></script>
+<script src="../static/js/owl.js"></script>
+<script src="../static/js/appear.js"></script>
+<script src="../static/js/wow.js"></script>
+<script src="../static/js/script.js"></script>
+
+<!--Color Switcher Script-->
+<script src="../static/js/color-settings.js"></script>
+</body>
+</html>

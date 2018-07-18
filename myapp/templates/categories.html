@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CHARITY HOUSE</title>
+<!-- Stylesheets -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+
+<!--Color Switcher Mockup-->
+<link href="css/color-switcher-design.css" rel="stylesheet">
+
+<!--Color Themes-->
+<link id="theme-color-file" href="css/color-themes/default-theme.css" rel="stylesheet">
+
+<!--Favicon-->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header-->
+    <header class="main-header header-type-one">
+    
+    	<!--Header Top-->
+    	<div class="header-top">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                    <div class="top-left">
+                        <ul class="clearfix">
+                        	<li class="call-us">Have Any Question? <a href="index-2.html#">Call Us</a></li>
+                            <li><span class="icon fa fa-clock-o"></span> Mon-Sat:  8:00am-6:30pm</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="top-right clearfix">
+                    	<ul class="social-icon-three">
+                        	<li><a href="index-2.html#"><span class="icon fa fa-facebook"></span></a></li>
+                            <li><a href="index-2.html#"><span class="icon fa fa-instagram"></span></a></li>
+                            <li><a href="index-2.html#"><span class="icon fa fa-google-plus"></span></a></li>
+                            <li><a href="index-2.html#"><span class="icon fa fa-linkedin"></span></a></li>
+                        </ul>
+                    	<!--Cart Box-->
+                        <a href="/login/" class="cart-box"><span class="icon flaticon-shopping-bag"></span> LOGIN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    	<!--Header-Upper-->
+        <div class="header-upper">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                	
+                	<div class="pull-left logo-outer">
+                    	<div class="logo"><a href="http://t.commonsupport.com/huminity/index-2.html"><img src="images/logo.png" alt="" title=""></a></div>
+                    </div>
+                    
+                    <div class="nav-outer clearfix">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->    	
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li class="current dropdown"><a href="index-2.html#">Home</a></li>
+									<li>	
+                                    <li class="current dropdown"><a href="about.html#">About</a>
+                                    	<ul>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="http://t.commonsupport.com/huminity/team.html">Our Team</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="http://t.commonsupport.com/huminity/events-grid.html">Events</a></li>
+                                    <li><a href="http://t.commonsupport.com/huminity/causes-grid.html">Causes</a></li>
+                                    <li><a href="http://t.commonsupport.com/huminity/shop.html">Feedback</a></li>
+                                    <li><a href="http://t.commonsupport.com/huminity/blog.html">Blog</a></li>
+                                    <li><a href="http://t.commonsupport.com/huminity/contact.html">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <br>
+                        <!-- Main Menu End-->
+                        <div class="search-box-outer">
+                            <div class="dropdown">
+                                <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+                                <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                    <li class="panel-outer">
+                                        <div class="form-container">
+                                            <form method="post" action="/search/">{% csrf_token %}
+                                                <div class="form-group">
+                                                    <input type="search" name="field-name" value="" placeholder="Search Here" required="">
+                                                    <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!--Donate Btn-->
+                        <div class="donate-btn">
+                        	<a class="donate theme-btn" href="/login/">Donate Now</a>
+                        </div>
+                        
+                	</div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+        
+        <!--Sticky Header-->
+        <div class="sticky-header">
+        	<div class="auto-container clearfix">
+            	<!--Logo-->
+            	<div class="logo pull-left">
+                	<a href="http://t.commonsupport.com/huminity/index.html" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a>
+                </div>
+                
+                <!--Right Col-->
+                <div class="right-col pull-right">
+                	<!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->    	
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        
+                        <div class="navbar-collapse collapse clearfix">
+							<ul class="navigation clearfix">
+								<li class="current dropdown"><a href="index-2.html">Home</a></li>
+								    <ul>
+								      <li><a href="http://t.commonsupport.com/huminity/categories.html">Categories</a></li>
+									 </ul> 
+							    </li>	
+                                <li class="current dropdown"><a href="about.html#">About</a>
+                                    <ul>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="http://t.commonsupport.com/huminity/team.html">Our Team</a></li>
+                                    </ul>
+                                </li>
+								<li><a href="http://t.commonsupport.com/huminity/events-grid.html">Events</a></li>
+								<li><a href="http://t.commonsupport.com/huminity/causes-grid.html">Causes</a></li>
+                                <li><a href="http://t.commonsupport.com/huminity/shop.html">Feedback</a></li>
+								<li><a href="http://t.commonsupport.com/huminity/blog.html">Blog</a></li>
+                                <li><a href="http://t.commonsupport.com/huminity/contact.html">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+                </div>
+                
+            </div>
+        </div>
+        <!--End Sticky Header-->
+    
+    </header>
+    <!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url(images/background/3.jpg);">
+    	<div class="auto-container">
+        	<div class="inner-box">
+                <h1>about us</h1>
+                <ul class="bread-crumb">
+                	<li><a href="http://t.commonsupport.com/huminity/index-2.html">Home</a></li>
+                    <li>About</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End Page Title-->
+    
+    <!--Title Section-->
+    <section class="title-section">
+    	<div class="auto-container">
+        	<div class="text">Charity house is the fund raising site for charitable causes. </div>
+        </div>
+    </section>
+    <!--End Title Section-->
+    
+    <!--Default Section-->
+    <section class="default-section style-two">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+				
+                <!--Video Column-->
+                <div class="video-column col-md-6 col-sm-12 col-xs-12">
+                	<div class="video-box">
+                        <figure class="image">
+                            <img src="images/resource/video-img.jpg" alt="">
+                        </figure>
+                        <a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image overlay-box"><span class="flaticon-arrow"></span></a>
+                    </div>
+                </div>
+				
+                
+    
+    <!--Call To Action Section-->
+    <section class="call-to-action-section" style="background-image:url(images/background/2.jpg);">
+    	<div class="auto-container">
+        	<h2>Become A Volunteer</h2>
+            <div class="text">Join with us and become real human being and make the world  smile !!</div>
+            <a href="http://t.commonsupport.com/huminity/contact.html" class="theme-btn btn-style-three">Join with Us.</a>
+        </div>
+    </section>
+    <!--End Call To Action Section-->
+    
+    <!--Sponsors Section-->
+    <section class="sponsors-section style-two">
+    	<div class="auto-container">
+        	<div class="carousel-outer">
+                <!--Sponsors Slider-->
+                <ul class="sponsors-carousel owl-carousel owl-theme">
+                    <li><div class="image-box"><a href="about.html#"><img src="images/clients/1.png" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="about.html#"><img src="images/clients/2.png" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="about.html#"><img src="images/clients/3.png" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="about.html#"><img src="images/clients/4.png" alt=""></a></div></li>
+					<li><div class="image-box"><a href="about.html#"><img src="images/clients/5.png" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="about.html#"><img src="images/clients/1.png" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="about.html#"><img src="images/clients/2.png" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="about.html#"><img src="images/clients/3.png" alt=""></a></div></li>
+                    <li><div class="image-box"><a href="about.html#"><img src="images/clients/4.png" alt=""></a></div></li>
+					<li><div class="image-box"><a href="about.html#"><img src="images/clients/5.png" alt=""></a></div></li>
+                </ul>
+            </div>
+    	</div>
+    </section>
+    <!--End Sponsors Section-->
+    
+  
+    <!--Subscribe Style One-->
+    <section class="subscribe-style-one">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <h2>Sign up for Updates</h2>
+                    <div class="text">Submit your email and stay in touch by notify with updates regularly.</div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <form method="post">{% csrf_token %}
+                        <div class="form-group">
+                            <input type="email" name="email" value="" placeholder="Enter your email" required>
+                            <button type="submit" onclick="myFunction()" class="theme-btn"><span class="icon flaticon-send-message-button"></span></button>
+							<script>
+
+function myFunction() {
+
+    alert("THANKYOU TO SUBSRCIBE ..!! ");
+	
+}
+
+</script>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!--End Subscribe Style One-->
+    
+    <!--Main Footer-->
+    <footer class="main-footer">
+    	
+        <div class="auto-container">
+            <div class="row clearfix">
+            
+                <!--big column-->
+                <div class="big-column col-md-7 col-sm-12 col-xs-12">
+                    <div class="row clearfix">
+                    
+                        <!--Footer Column-->
+                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-widget logo-widget">
+                                <div class="widget-content">
+                                    <div class="logo-box">
+                                        <a href="http://t.commonsupport.com/huminity/index.html"><img src="images/footer-logo.png" alt="" /></a>
+                                    </div>
+                                    <div class="text">your one step,will change lives. </div>
+                                    <ul class="social-icon-two">
+                                        <li><a href="about.html#"><span class="fa fa-facebook"></span></a></li>
+                                        <li><a href="about.html#"><span class="fa fa-twitter"></span></a></li>
+                                        <li><a href="about.html#"><span class="fa fa-google-plus"></span></a></li>
+                                        <li><a href="about.html#"><span class="fa fa-vimeo"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Footer Column / Links Widget-->
+                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-widget links-widget">
+                                <h2>Quick Links</h2>
+                                <div class="widget-content">
+                                	<div class="row clearfix">
+                                        <ul class="list col-md-7 col-sm-6 col-xs-12">
+                                            <li><a href="about.html#">About us </a></li>
+                                            <li><a href="about.html#">Recent projects</a></li>
+                                            <li><a href="about.html#">Our Mission</a></li>
+                                            <li><a href="about.html#">Privacy & policy</a></li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!--big column-->
+                <div class="big-column col-md-5 col-sm-12 col-xs-12">
+                    <div class="row clearfix">
+                     <!--Footer Column-->
+                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-widget address-widget">
+                                <h2>Our Address</h2>
+                                <div class="widget-content">
+                                    <ul class="list-style-one">
+                                        <li><span class="icon flaticon-location-pin"></span>Jims Sector-5 Rohini,New Delhi,India</li>
+                                        <li><span class="icon flaticon-technology-1"></span>9910938024/li>
+                                        <li><span class="icon flaticon-e-mail-envelope"></span>charityhouse246@gmail.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+        	<div class="auto-container">
+            	<div class="row clearfix">
+                	<div class="col-md-6 col-sm-6 col-xs-12">
+                    	<div class="copyright">All Right Researved <a href="index-2.html#">CHARITY HOUSE</a> &copy; 2018</div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                    	<ul class="footer-nav">
+                        	<li><a href="about.html#">Home</a></li>
+                            <li><a href="about.html#">Contact Us</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon fa fa-long-arrow-up"></span></div>
+
+
+<!-- Color Palate / Color Switcher -->
+<div class="color-palate">
+    <div class="color-trigger">
+        <i class="fa fa-gear"></i>
+    </div>
+    <div class="color-palate-head">
+        <h6>Choose Your Color</h6>
+    </div>
+    <div class="various-color clearfix">
+        <div class="colors-list">
+            <span class="palate default-color active" data-theme-file="css/color-themes/default-theme.css"></span>
+            <span class="palate teal-color" data-theme-file="css/color-themes/teal-theme.css"></span>
+            <span class="palate green-color" data-theme-file="css/color-themes/green-theme.css"></span>
+            <span class="palate yellow-color" data-theme-file="css/color-themes/yellow-theme.css"></span>
+            <span class="palate blue-color" data-theme-file="css/color-themes/blue-theme.css"></span>
+            <span class="palate orange-color" data-theme-file="css/color-themes/orange-theme.css"></span>
+            <span class="palate olive-color" data-theme-file="css/color-themes/olive-theme.css"></span>
+            <span class="palate red-color" data-theme-file="css/color-themes/red-theme.css"></span>
+        </div>
+    </div>
+
+    <div class="palate-foo">
+        <span>You can easily change and switch the colors.</span>
+    </div>
+
+</div>
+<!-- /.End Of Color Palate -->
+
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/appear.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/script.js"></script>
+
+<!--Color Switcher Script-->
+<script src="js/color-settings.js"></script>
+</body>
+</html>

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Umang |Blog</title>
+<!-- Stylesheets -->
+<link href="../static/css/bootstrap.css" rel="stylesheet">
+<link href="../static/css/style.css" rel="stylesheet">
+<link href="../static/css/responsive.css" rel="stylesheet">
+
+<!--Color Switcher Mockup-->
+<link href="../static/css/color-switcher-design.css" rel="stylesheet">
+
+<!--Color Themes-->
+<link id="theme-color-file" href="../static/css/color-themes/default-theme.css" rel="stylesheet">
+
+<!--Favicon-->
+<link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header-->
+    <header class="main-header header-type-one">
+	<!--Header Top event-->
+    	<div class="header-top">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                    
+					
+						
+<script>                                                            <!--Set the date we're counting down to-->
+
+
+         var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();    <!-- Update the count down every 1 second-->
+         var x = setInterval(function() {                                   <!--Get todays date and time-->
+		 var now = new Date().getTime();                                    <!--Find the distance between now an the count down date-->
+		 var distance = countDownDate - now;                                <!-- Time calculations for days, hours, minutes and seconds-->
+		 var days = Math.floor(distance / (1000 * 60 * 60 * 24));    
+         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+         var seconds = Math.floor((distance % (1000 * 60)) / 1000);         <!-- Output the result in an element with id="demo"-->
+					document.getElementById("demo").innerHTML = days + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds ";
+    
+                                                                            <!-- If the count down is over, write some text -->
+    if (distance < 0) {
+        clearInterval(x);
+				document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+	<!--end of timer -->							
+				    <div class="top-left">
+						<ul class="clearfix">
+						<li><h3 style="color:white;">Upcoming Event:-</h4></li>	
+						 <li><h3  style="font-family: Comic Sans MS;" id ="demo"></h3></li>
+						 <li><a href="/events-grid/"><h5 style="color:white;">Readmore..</h5></a></li>
+						 </ul>
+				    </div>
+                </div>
+            </div>
+        </div>
+    
+    	<!--Header Top-->
+    	<div class="header-top">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                    <div class="top-left">
+                        <ul class="clearfix">
+                        	<li class="call-us">Have Any Question?<a href="/">Call Us</a></li>
+							<li><span class="icon fa fa-phone"></span> 9910938024</li>
+                            <li><span class="icon fa fa-clock-o"></span> Mon-Sat 8:00am-6:30pm</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="top-right clearfix">
+                    	<ul class="social-icon-three">
+                        	<li><a href="https://www.facebook.com/Umang-For-Life-633863450299917/?modal=admin_todo_tour"><span class="icon fa fa-facebook"></span></a></li>
+                            <li><a href="https://www.instagram.com/umangforlife/"><span class="icon fa fa-instagram"></span></a></li>
+                            <li><a href="https://plus.google.com/u/0/discover"><span class="icon fa fa-google-plus"></span></a></li>
+                        </ul>
+                    	<!--Cart Box-->
+                        <a href="{% url 'logout' %}" class="cart-box"><img src="../static/images/icons/login1.png">  Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    	<!--Header-Upper-->
+        <div class="header-upper">
+        	<div class="auto-container">
+            	<div class="clearfix">
+                	
+                	<div class="pull-left logo-outer">
+                    	<div class="logo"><a href="/"><img src="/static/images/logo.png" alt="" title=""></a></div>
+                    </div>
+                    
+                    <div class="nav-outer clearfix">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->    	
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li><a href="/">Home</a></li>
+                                   <li><a href="/about/">About</a></li>
+                                
+								<li><a href="/events-grid/">Events</a>
+                                <li><a href="/causes-grid/">Services</a>
+                                <li class="dropdown"><a href="/">Category</a>
+                                    <ul>
+									<li><a href="/children/"> Children</a></li>
+									<li><a href="/oldage/"> Old-age Home</a></li>
+									<li><a href="/widow/"> Widow Women</a></li>
+									<li><a href="/animals/"> Animals</a></li>
+									</ul>
+                                </li>
+                                    
+                                    <li><a href="/feedback/">Feedback</a></li>
+                                    <li class="current"><a href="/blog/">Blog</a></li>
+                                    <li><a href="/contact/">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <br>
+                        <!-- Main Menu End-->
+                        <div class="search-box-outer">
+                            <div class="dropdown">
+                                <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+                                <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                    <li class="panel-outer">
+                                        <div class="form-container">
+                                            <form method="post" action="/search/">{% csrf_token %}
+                                                <div class="form-group">
+                                                    <input type="search" name="search" value="" placeholder="Search Here" required="">
+                                                    <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!--Donate Btn-->
+                        <div class="donate-btn">
+                        	<a class="donate theme-btn" href="/donate/">Donate Now</a>
+                        </div>
+                        
+                	</div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--End Header Upper-->
+        
+        <!--Sticky Header-->
+        <div class="sticky-header">
+        	<div class="auto-container clearfix">
+            	<!--Logo-->
+            	<div class="logo pull-left">
+                	<a href="/" class="img-responsive"><img src="/static/images/logo-small.png" alt="" title=""></a>
+                </div>
+                
+                <!--Right Col-->
+                <div class="right-col pull-right">
+                	<!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->    	
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        
+                        <div class="navbar-collapse collapse clearfix">
+							<ul class="navigation clearfix">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/about/">About</a></li>
+                                        
+                                
+								<li><a href="/events-grid/">Events</a></li>
+                                        
+                                <li ><a href="/causes-grid/">Services</a>
+								<li class="dropdown"><a href="/">Category</a>
+                                    <ul>
+									<li><a href="/children/"> Children</a></li>
+									<li><a href="/oldage/"> Old-age Home</a></li>
+									<li><a href="/widow/"> Widow Women</a></li>
+									<li><a href="/animals/"> Animals</a></li>
+									</ul>
+                                </li>
+                                   
+                                </li>
+                                <li><a href="/feedback/">Feedback</a></li>
+								<li class="current"><a href="/blog/">Blog</a></li>
+                                <li><a href="/contact/">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+                </div>
+                
+            </div>
+        </div>
+        <!--End Sticky Header-->
+    
+    </header>
+    <!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url(/static/images/background/b.jpg);">
+    	<div class="auto-container">
+        	<div class="inner-box">
+                <h1>Our blogs</h1>
+                <ul class="bread-crumb">
+                	<li><a href="/">Home</a></li>
+                    <li>blogs</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End Page Title-->
+    
+    <!--Sidebar Page Container / Blog Single-->
+    <div class="sidebar-page-container blog-single">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Content Side-->
+                <div class="content-side col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                	
+                    <!--News Block-->
+                    <div class="news-block">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="/static/images/resource/news-3.jpg" alt="" />
+                            </div>
+                            <div class="lower-box">
+                            	<ul class="post-meta">
+                                    <li><span class="icon fa fa-comment-o"></span>1</li>
+                                    <li><span class="icon fa fa-heart-o"></span>5</li>
+                                </ul>
+                                <h3>Education is a gift of life!!</h3>
+                                <div class="text">
+                                	<p>At Umaang , we help children unlock their potential and realize their dreams. We believe that every child is extraordinary and can scale great heights if provided with the right learning opportunities. With regular and generous contributions from our supporters, we are able to march steadily towards achieving these goals.
+
+We aim to keep a smile at every child's face</p>
+                                    <div class="blog-gallery">
+                                        <div class="row clearfix">
+                                            <div class="image-column col-md-4 col-sm-4 col-xs-12">
+                                                <div class="image">
+                                                    <img src="/static/images/resource/blog-1.jpg" height="150px" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="image-column col-md-4 col-sm-4 col-xs-12">
+                                                <div class="image">
+                                                    <img src="/static/images/resource/blog-2.jpg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="image-column col-md-4 col-sm-4 col-xs-12">
+                                                <div class="image">
+                                                    <img src="/static/images/resource/blog-3.jpg" height="150px" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p></p>
+                                </div>
+                                
+                                <!--post-share-options-->
+                                <div class="post-share-options clearfix">
+                                    <div class="pull-left tags"><a href="/blog/">Child</a> <a href="/blog/">Education</a></div>
+                                    <div class="pull-right clearfix">
+                                        <div class="share"><a href="https://www.facebook.com/Umang-For-Life-633863450299917/?modal=admin_todo_tour"><span class="icon fa fa-share-alt"></span>&nbsp; SHARE THIS</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+					<!--News Block-->
+                    <div class="news-block">
+                        <div class="inner-box">
+                            <div class="image">
+                                <img src="/static/images/resource/news-0.jpg" alt="" />
+                            </div>
+                            <div class="lower-box">
+                            	<ul class="post-meta">
+                                    <li><span class="icon fa fa-comment-o"></span>1</li>
+                                    <li><span class="icon fa fa-heart-o"></span>5</li>
+                                </ul>
+                                <h3>Save animals and nature beauty</h3>
+                                <div class="text">
+                                	<p>Umaang is dedicated to providing a safe refuge to animals suffering from neglect and cruelty. 
+
+The purpose is to make people aware about the care, management and nutrition of pet and stray animals.
+
+For Umaang, All animals on this planet are the pets of the society and hence we need to realize their importance in our everyday life and do our bit in exchange.</p>
+                                    <div class="blog-gallery">
+                                        <div class="row clearfix">
+                                            <div class="image-column col-md-4 col-sm-4 col-xs-12">
+                                                <div class="image">
+                                                    <img src="/static/images/resource/blog-4.jpg" height="150px" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="image-column col-md-4 col-sm-4 col-xs-12">
+                                                <div class="image">
+                                                    <img src="/static/images/resource/blog-5.jpg" height="150px" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="image-column col-md-4 col-sm-4 col-xs-12">
+                                                <div class="image">
+                                                    <img src="/static/images/resource/blog-6.jpg" height="150px" alt="" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p></p>
+                                </div>
+                                
+                                <!--post-share-options-->
+                                <div class="post-share-options clearfix">
+                                    <div class="pull-left tags"><a href="/blog/">Animals</a> <a href="/blog/">Dogs</a></div>
+                                    <div class="pull-right clearfix">
+                                        <div class="share"><a href="https://www.facebook.com/Umang-For-Life-633863450299917/?modal=admin_todo_tour"><span class="icon fa fa-share-alt"></span>&nbsp; SHARE THIS</a></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!--Comments Area-->
+                    <div class="comments-area">
+                        <div class="group-title"><h2>Comments</h2></div>
+                        <!--Comment Outer-->
+                        <div class="comment-outer">
+                            <!--Comment Box-->
+                            <div class="comment-box">
+                                <div class="comment">
+                                    <div class="author-thumb"><img src="/static/images/resource/author-8.jpg" alt=""></div>
+                                    <div class="comment-inner">
+                                        <div class="comment-info clearfix"><strong>Jannatul FA.</strong></div>
+                                        <div class="text">UMANG NGO IS BEST NGO..!!! </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        {% for i in data%}
+                        <!--Comment Outer-->
+                        <div class="comment-outer">
+                            <!--Comment Box-->
+                            <div class="comment-box">
+                                <div class="comment">
+                                    <div class="author-thumb"><img src="/static/images/resource/author-10.jpg" alt=""></div>
+                                    <div class="comment-inner">
+                                        <div class="comment-info clearfix"><strong>{{i.created_by.username}}</strong></div>
+                                        <div class="text">{{i.text}}</div>
+										<br>
+										<table>
+											{% if nested %}
+												{% for k in nested %}
+													{% if i.id == k.comment.id %}
+														 <div class="comment">
+																<div class="author-thumb"><img src="/static/images/resource/author-8.jpg" alt=""></div>
+																		<div class="comment-inner">
+																			<div class="comment-info clearfix"><strong>{{k.created_by.username}}</strong></div>
+																			<div class="text">{{k.text}} </div>
+																				
+																        </div>
+														 </div>
+													{% endif %}
+												{% endfor %}
+											{% endif %}   
+													  <tr>
+															 <td>
+																 <img class="d-flex mr-3 rounded-circle" src="/static/img/3.jpg" width=40 height=40 alt="">
+															 </td>
+													  <td>
+													  <form action="{% url 'nested' %}" method='POST'>{% csrf_token %}
+														 <div class='form-group' style='margin-left:1px;margin-top:20px'>
+																  
+																<input type='hidden' name='comment' value='{{i.id}}'>
+																<input type='text' name='text' placeholder='REPLY' width=800px>
+														  </div>
+													  </form>		
+													  </td></tr>			
+										 </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}    
+                    </div>
+                    <!--End Comments Area-->
+                    
+                    <!-- Comment Form -->
+                    <div class="comment-form">
+                        <div class="group-title">
+                        	<h2>Leave A Comment</h2>
+                            
+                        </div>
+                        <!--Comment Form-->
+                        <form method="post" action=''>{% csrf_token %}
+                            <div class="row clearfix">
+                            
+                            	<div class="column col-md-6 col-sm-6 col-xs-12">
+                                    <!--Form Group-->
+                                    <div class="form-group">
+                                        <textarea name="text" placeholder="Write Here...."></textarea>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                                    <button class="theme-btn btn-style-one" type="submit" name="submit-form">Post Comment</button>
+                                </div>
+                                
+                             </div>
+                        </form>
+                    </div>
+                    <!--End Comment Form -->
+                </div>
+                
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                	<aside class="sidebar default-sidebar">
+						
+                        <!-- Search -->
+                        <div class="sidebar-widget search-box">
+                        	<form method="post" action="/search/">{% csrf_token %}
+                                <div class="form-group">
+                                    <input type="search" name="search" value="" placeholder="Search Here.." required>
+                                    <button type="submit"><span class="icon fa fa-search"></span></button>
+                                </div>
+                            </form>
+						</div>
+                        
+                        <!--Blog Category Widget-->
+                        <div class="sidebar-widget sidebar-blog-category">
+                            <div class="sidebar-title">
+                                <h2>Categories</h2>
+                            </div>
+                            <ul class="blog-cat">
+                                <li><a href="/oldage/">Old-age Homes</a></li>
+                                <li><a href="/widow/">Widow Womens</a></li>
+                                <li><a href="/animals/">Animals</a></li>
+                                <li><a href="/children/">Children</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Popular Posts -->
+                        <div class="sidebar-widget popular-posts">
+                            <div class="sidebar-title"><h2>Recent Events</h2></div>
+
+                            <article class="post">
+                            	<figure class="post-thumb"><a href="/events-grid/"><img src="/static/images/resource/post-thumb-1.jpg" alt=""></a></figure>
+                                <div class="text"><a href="/events-grid/">Insure Education For Every Children</a></div>
+                                <a href="/events-grid/" class="detail">See Details <span class="icon fa fa-angle-right"></span></a>
+                            </article>
+
+                            <article class="post">
+                            	<figure class="post-thumb"><a href="/events-grid/"><img src="/static/images/resource/post-thumb-2.jpg" alt=""></a></figure>
+                                <div class="text"><a href="/events-grid/">Save Animals & Save Nature Beauty</a></div>
+                                <a href="/events-grid/" class="detail">See Details <span class="icon fa fa-angle-right"></span></a>
+                            </article>
+                            
+                            <article class="post">
+                            	<figure class="post-thumb"><a href="/events-grid/"><img src="/static/images/resource/post-thumb-3.jpg" alt=""></a></figure>
+                                <div class="text"><a href="/events-grid/">Stand for women rights and facilities.</a></div>
+                                <a href="/events-grid/" class="detail">See Details <span class="icon fa fa-angle-right"></span></a>
+                            </article>
+
+                        </div>
+                        
+                        <!-- Popular Tags -->
+                        <div class="sidebar-widget popular-tags">
+                            <div class="sidebar-title"><h2>Keyword</h2></div>
+                            <a href="/blog/">Food</a>
+                            <a href="/blog/">Charity</a>
+                            <a href="/blog/">Child</a>
+                            <a href="/blog/">Children</a>
+                            <a href="/blog/">Food</a>
+                        </div>
+                        
+                    </aside>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--End Causes Section-->
+    
+   
+    <!--Subscribe Style One-->
+    <section class="subscribe-style-one">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <h2>Sign up for Updates</h2>
+                    <div class="text">Submit your email and stay in touch by notify with updates regularly.</div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <form method="post">{% csrf_token %}
+                        <div class="form-group">
+                            <input type="email" name="email" value="" placeholder="Enter your email" required>
+                            <button type="submit" onclick="myFunction()" class="theme-btn"><span class="icon flaticon-send-message-button"></span></button>
+							<script>
+
+function myFunction() {
+
+    alert("THANKYOU TO SUBSRCIBE ..!! ");
+	
+}
+
+</script>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!--End Subscribe Style One-->
+    <!--Main Footer-->
+    <footer class="main-footer">
+    	
+        <div class="auto-container">
+            <div class="row clearfix">
+            
+                <!--big column-->
+                <div class="big-column col-md-7 col-sm-12 col-xs-12">
+                    <div class="row clearfix">
+                    
+                        <!--Footer Column-->
+                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-widget logo-widget">
+                                <div class="widget-content">
+                                    <div class="logo-box">
+                                        <a href="/"><img src="/static/images/footer-logo.png" alt="" /></a>
+                                    </div>
+                                    <div class="text">your one step,will change lifes. </div>
+                                    <ul class="social-icon-two">
+                                        <li><a href="https://www.facebook.com/Umang-For-Life-633863450299917/?modal=admin_todo_tour"><span class="icon fa fa-facebook"></span></a></li>
+                            <li><a href="https://www.instagram.com/umangforlife/"><span class="icon fa fa-instagram"></span></a></li>
+                            <li><a href="https://plus.google.com/u/0/discover"><span class="icon fa fa-google-plus"></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Footer Column / Links Widget-->
+                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-widget links-widget">
+                                <h2>Quick Links</h2>
+                                <div class="widget-content">
+                                	<div class="row clearfix">
+                                        
+                                            <ul class="list col-md-7 col-sm-6 col-xs-12">
+                                            <li><a href="/about/">About us </a></li>
+                                            <li><a href="/events-grid/">Recent projects</a></li>
+                                            <li><a href="/about/">Our Mission</a></li>
+                                             <li><a href="/team/">Our Team</a></li>
+                                        </ul>
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!--big column-->
+                <div class="big-column col-md-5 col-sm-12 col-xs-12">
+                    <div class="row clearfix">
+                    	
+                        <!--Footer Column-->
+                        
+                        
+                        <!--Footer Column-->
+                        <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                            <div class="footer-widget address-widget">
+                                <h2>Our Address</h2>
+                                <div class="widget-content">
+                                    <ul class="list-style-one">
+                                        <li><span class="icon flaticon-location-pin"></span>Jims Sector-5 Rohini,New Delhi,India</li>
+                                        <li><span class="icon flaticon-technology-1"></span>9910938024</li>
+                                        <li><span class="icon flaticon-e-mail-envelope"></span>umangforlives@gmail.com</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!--Footer Bottom-->
+        <div class="footer-bottom">
+        	<div class="auto-container">
+            	<div class="row clearfix">
+                	<div class="col-md-6 col-sm-6 col-xs-12">
+                    	<div class="copyright">All Right Researved <a href="blog-single.html#">Umang</a> &copy; 2018</div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                    	<ul class="footer-nav">
+                        	<li><a href="/">Home</a></li>
+                            <li><a href="/contact/">Contact Us</a></li>
+                             <li><a href="/team/">Our Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon fa fa-long-arrow-up"></span></div>
+
+
+<!-- Color Palate / Color Switcher -->
+<div class="color-palate">
+    <div class="color-trigger">
+        <i class="fa fa-gear"></i>
+    </div>
+    <div class="color-palate-head">
+        <h6>Choose Your Color</h6>
+    </div>
+    <div class="various-color clearfix">
+        <div class="colors-list">
+            <span class="palate default-color active" data-theme-file="../static/css/color-themes/default-theme.css"></span>
+            <span class="palate teal-color" data-theme-file="../static/css/color-themes/teal-theme.css"></span>
+            <span class="palate green-color" data-theme-file="../static/css/color-themes/green-theme.css"></span>
+            <span class="palate yellow-color" data-theme-file="../static/css/color-themes/yellow-theme.css"></span>
+            <span class="palate blue-color" data-theme-file="../static/css/color-themes/blue-theme.css"></span>
+            <span class="palate orange-color" data-theme-file="../static/css/color-themes/orange-theme.css"></span>
+            <span class="palate olive-color" data-theme-file="../static/css/color-themes/olive-theme.css"></span>
+            <span class="palate red-color" data-theme-file="../static/css/color-themes/red-theme.css"></span>
+        </div>
+    </div>
+
+    <div class="palate-foo">
+        <span>You can easily change and switch the colors.</span>
+    </div>
+
+</div>
+<!-- /.End Of Color Palate -->
+
+<script src="../static/js/jquery.js"></script> 
+<script src="../static/js/bootstrap.min.js"></script>
+<script src="../static/js/jquery.fancybox.pack.js"></script>
+<script src="../static/js/jquery.fancybox-media.js"></script>
+<script src="../static/js/owl.js"></script>
+<script src="../static/js/appear.js"></script>
+<script src="../static/js/wow.js"></script>
+<script src="../static/js/script.js"></script>
+
+<!--Color Switcher Script-->
+<script src="../static/js/color-settings.js"></script>
+</body>
+</html>
